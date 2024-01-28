@@ -10,7 +10,7 @@ module SEC10(
 
     always @( posedge CLK ) begin
         if ( RST )
-            endcnt <= 26'b0;
+            cnt <= 26'b0;
         else if (en1hz) // カウントが上限に達したらリセット
             cnt <= 26'b0;
         else
