@@ -18,30 +18,23 @@ module SEC60(
             cnt <= cnt + 26'b1;
     end
 
-    /* 6進カウンタ (10秒桁) */
+    /* カウンタ */
+    reg [3:0] sec;
     reg [3:0] ten_sec;
 
     always @( posedge CLK ) begin
-        if ( RST )
+        if ( RST )begin
+            sec <= 4'h0;
             ten_sec <= 4'h0;
+        end
         else if (en1hz)
             if ( ten_sec == 4'h5 )
                 ten_sec <= 4'h0;
-    end
-
-    /* 10進カウンタ (1秒桁) */
-    reg [3:0] sec;
-
-    always @( posedge CLK ) begin
-        if ( RST )
+        if ( sec == 4'h9 ) begin
             sec <= 4'h0;
-        else if (en1hz)
-            if ( sec == 4'h9 ) begin
-                sec <= 4'h0;
-                ten_sec <= ten_sec + 4'h1;
-            end
-            else
-                sec <= sec + 4'h1;
+            ten_sec <= ten_sec + 4'h1;
+        end else
+            sec <= sec + 4'h1;
     end
 
 
