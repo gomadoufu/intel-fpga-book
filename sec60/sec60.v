@@ -28,13 +28,15 @@ module SEC60(
             ten_sec <= 4'h0;
         end
         else if (en1hz)
-            if ( ten_sec == 4'h5 )
-                ten_sec <= 4'h0;
-        if ( sec == 4'h9 ) begin
-            sec <= 4'h0;
-            ten_sec <= ten_sec + 4'h1;
-        end else
-            sec <= sec + 4'h1;
+            if ( sec == 4'h9 ) begin
+                sec <= 4'h0;
+                if ( ten_sec == 4'h5 )
+                    ten_sec <= 4'h0;
+                else
+                    ten_sec <= ten_sec + 4'h1;
+            end
+            else
+                sec <= sec + 4'h1;
     end
 
 
