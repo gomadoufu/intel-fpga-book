@@ -1,0 +1,7 @@
+
+State Machine - |CLOCK24|STATE:STATE|cur
+Name cur.HOUR cur.MIN cur.SEC cur.NORM 
+cur.NORM 0 0 0 0 
+cur.SEC 0 0 1 1 
+cur.MIN 0 1 0 1 
+cur.HOUR 1 0 0 1 
