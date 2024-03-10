@@ -1,4 +1,4 @@
-module nios2pio (
+module nios2mypio (
         /* クロック、リセット (SW[9]) */
         input CLK, RST,
 
@@ -31,10 +31,10 @@ module nios2pio (
     assign HEX1=7'h7f, HEX2=7'h7f, HEX3=7'h7f, HEX4=7'h7f, HEX5=7'h7f;
 
     /* Platform Designer階層の接続 */
-    nios2pio_qsys u0 (
-                      .clk_clk(CLK),
-                      .reset_reset_n(~RST),
-                      .pio_0_external_connection_export(HEX0),
-                      .pio_1_external_connection_export(SW[3:0])
-                  );
+    nios2mypio_qsys u0 (
+                        .clk_clk(CLK),
+                        .reset_reset_n(~RST),
+                        .pio_0_external_connection_export(HEX0),
+                        .pio_1_external_connection_export(SW[3:0])
+                    );
 endmodule
