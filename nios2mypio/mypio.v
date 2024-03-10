@@ -1,6 +1,6 @@
 module mypio (
         /* Avalonバス */
-        input cl, reset,
+        input clk, reset,
         input address,
         input write, read,
         input [7:0] writedata,
@@ -20,6 +20,7 @@ module mypio (
     end
 
     /* 入力レジスタ */
-    assign readdata = (read==1'b0) ? 8'h00: (address==1'b0) ? {1'b0, nHEX} : {4h0, SW};
+    assign readdata = (read==1'b0) ? 8'h00:
+           (address==1'b0) ? {1'b0, nHEX} : {4'h0, SW};
 
 endmodule
