@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "mypio_0_conduit_end_nhex[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_nhex[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_0_external_connection_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mypio_0_conduit_end_sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_1_external_connection_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_1_external_connection_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_1_external_connection_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pio_1_external_connection_export[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
